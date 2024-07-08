@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/trystan-lothaire--J_LNf9RUsU-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.login-container {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  background-color: rgba(17, 17, 17, 0.459);
+}

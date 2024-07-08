@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="icon" href="/assets/img/pngegg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/path/to/your/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css files/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css files/all.min.css" />
+    <link rel="stylesheet" href="/assets/css files/login.css" />
+    <style>
+      input::placeholder {
+        color: aliceblue !important;
+        opacity: 0.5 !important;
+      }
+      .logo {
+        width: 50px;
+        height: 5vh;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="modal modal-sheet position-static d-block p-4 py-md-3 text-center text-light"
+      tabindex="-1"
+      role="dialog"
+      id="modalSignin"
+    >
+      <div class="logo d-md-block d-none">
+        <a href="/Home.html"
+          ><img class="w-100" src="/assets/img/pngegg.png" alt=""
+        /></a>
+      </div>
+      <div
+        style="background-color: rgba(255, 245, 238, 0.274)"
+        class="modal-dialog"
+        role="document"
+      >
+        <div
+          style="background-color: rgba(0, 0, 0, 0.685)"
+          class="modal-content rounded-4 shadow"
+        >
+          <div class="modal-header p-5 pb-4 border-bottom-0 text-center">
+            <h1 class="fw-bold mb-2 fs-2 w-100">Sign up</h1>
+          </div>
+
+          <div class="modal-body p-5 pt-0">
+            <form class="row g-3" id="signUP">
+              <div class="col-md-12">
+                <label for="inputEmail4 " class="form-label mb-3">Email</label>
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-light"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-12">
+                <label for="inputPassword4" class="form-label my-2"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control bg-transparent text-light"
+                  id="inputPassword4"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label my-2"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-transparent text-light"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label my-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control bg-transparent text-light"
+                  id="phone"
+                  placeholder="(+20) 000-000-0000"
+                />
+              </div>
+              <div class="col-12 row g-3 my-2 text-start">
+                <div class="col-md-6">
+                  <label for="DateOfBirth" class="form-label"
+                    >Date of birth</label
+                  >
+                  <input type="date" class="form-control" id="DateOfBirth" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">You Are</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Player</option>
+                    <option>Parent</option>
+                    <option>Visitor</option>
+                  </select>
+                </div>
+              </div>
+
+              <button
+                class="w-100 mb-2 btn btn-lg rounded-3 btn-success my-3"
+                type="submit"
+              >
+                Sign up
+              </button>
+              <small class="text-light fw-bold text-center"
+                >By clicking Sign up, you agree to the terms of use.</small
+              >
+              <hr class="my-4" />
+              <h2 class="fs-5 fw-bold mb-3">Or use another way</h2>
+              <button
+                class="w-100 py-2 mb-2 btn btn-outline-danger rounded-3"
+                type="submit"
+              >
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#twitter" />
+                </svg>
+                Sign up with Google
+              </button>
+              <button
+                class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+                type="submit"
+              >
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#facebook" />
+                </svg>
+                Sign up with Facebook
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script src="/assets/js files/all.min.js"></script>
+    <script src="/assets/js files/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js files/signup.js"></script>
+  </body>
+</html>
